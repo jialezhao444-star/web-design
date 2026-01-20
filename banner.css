@@ -1,0 +1,40 @@
+ body {
+    margin: 0;
+    height: 50vh;
+    position: relative;
+  }
+
+  .box {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    font-weight: bold;
+  }
+
+  .box1 {
+    background: red;
+    top: 20px;
+    left: 20px;
+  }
+
+  .box2 {
+    background: blue;
+    top: 20px;
+    right: 20px;
+  }
+
+  .box3 {
+    background: yellow;
+    color: #000;
+   bottom: 20px;
+    left: 20px;
+  }
+
+  .box4 {
+    background: green;
+   bottom: 20px;
+    right: 20px;
+  }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>IKEA Layout Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #fff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    /* 左侧主图 */
+    .hero {
+      position: relative;
+      background: url("https://via.placeholder.com/900x600") center/cover no-repeat;
+      min-height: 600px;
+      color: #fff;
+    }
+
+    .hero h1 {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-size: 80px;
+      font-weight: bold;
+      color: #ffda1a;
+    }
+
+    .hero .cta {
+      position: absolute;
+      bottom: 40px;
+      left: 30px;
+    }
+
+    .hero .cta p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .hero .cta a {
+      display: inline-block;
+      background: #ffda1a;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* 右侧卡片区域 */
+    .side {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      min-height: 140px;
+      color: #fff;
+      padding: 12px;
+    }
+
+    .card span {
+      background: rgba(0,0,0,0.6);
+      padding: 4px 8px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    /* 不同卡片背景 */
+    .card1 { background-image: url("https://via.placeholder.com/400x200"); }
+    .card2 { background-image: url("https://via.placeholder.com/400x200"); }
+    .card3 { background-image: url("https://via.placeholder.com/400x200"); }
+    .card4 { background-image: url("https://via.placeholder.com/400x200"); }
+
+    /* 响应式 */
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 左侧主视觉 -->
+    <div class="hero">
+      <h1>IKEA®</h1>
+      <div class="cta">
+        <p>Go shopping on your local site</p>
+        <a href="#">Go to ikea.us</a>
+      </div>
+    </div>
+
+    <!-- 右侧卡片 -->
+    <div class="side">
+      <div class="card card1">
+        <span>IKEA Today</span>
+      </div>
+      <div class="card card2">
+        <span>About IKEA</span>
+      </div>
+      <div class="card card3">
+        <span>IKEA Museum</span>
+      </div>
+      <div class="card card4">
+        <span>IKEA at H22</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

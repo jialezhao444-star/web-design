@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    padding: 3px;
+    justify-content:end;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-item {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.row1 {
+    display: flex;
+    height: 85vh;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.google {
+    display: inline-flex;
+    font-size: 100px;
+    padding: 40px;
+    
+}
+.g {
+    color: blue;
+}
+
+.O {
+    color: red;
+}
+
+.o {
+    color: rgba(205, 205, 54, 0.626);
+}
+
+.g {
+    color: blue;
+}
+
+.l {
+    color: green;
+}
+
+.e {
+    color: red;
+}
+.search {
+    display: flex;
+    border: 1px solid rgb(20, 14, 14) ;
+    width: 700px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 2px  black;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.left-search {
+    display: flex;
+    gap: 10px;
+}
+
+.right-search {
+    display: flex;
+    gap: 10px;
+}
+.p {
+    display: flex;
+    width: 2px;
+    height: 30px;
+    background-color: black;
+    gap: 20px;
+}
+
+.Image {
+    border-radius: 50%;
+}
+
+.row2 {
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    background-color: white;
+    padding: 20px; 
+} 
+ /* .row3 {
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+}  */
+  /* .left-low,.right-low {
+    display: flex;
+    justify-content: row;
+    padding: 10px;
+    gap: 20px;
+} */
+.part {
+    display: grid;
+    padding: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.left-p,.right-p {
+    border: 4px solid beige;
+    background-color: beige;
+} 
+.M{
+    display: grid;
+  
+   grid-row:2/3;
+   grid-column: 1/4;
+  justify-content: center;
+  
+  
+}
